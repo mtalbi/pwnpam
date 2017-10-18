@@ -1,0 +1,6 @@
+#!/usr/bin/rarun2
+program=./pampam
+arg1="mtalbi"
+stdin="wrongpass"
+stdout=
+

@@ -176,7 +176,7 @@ main(int argc, char **argv)
 	ret = hammer_search(&ctx, buffer, &res);
 
 	if (ret != -1) {
-		fd_target = open(ctx.target, O_RDONLY);
+		fd_target = open(ctx.target, O_RDONLY | O_DIRECT);
 		if (fd_target < 0) {
 			err(EXIT_FAILURE, "cannot open target file");
 		}
